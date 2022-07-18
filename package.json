@@ -4,7 +4,7 @@
   "description": "Beauty salon",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/LemiKg/act1-salon.git"
   },
   "main": "script.js",
   "scripts": {
