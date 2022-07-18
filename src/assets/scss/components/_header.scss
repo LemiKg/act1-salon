@@ -1,0 +1,60 @@
+.header {
+  z-index: 10;
+  background-color: $dark-color;
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    .location {
+      display: none;
+    }
+
+    @media only screen and ($tablet) {
+      justify-content: space-between;
+      flex-direction: row;
+
+      .location {
+        display: block;
+      }
+    }
+  }
+
+  .logo {
+    img {
+      @media only screen and ($desktop) {
+        width: 120px;
+        height: 120px;
+      }
+      width: 100%;
+    }
+  }
+
+  .navigation {
+    align-items: center;
+    font-family: $navigation-font;
+    display: flex;
+
+    .nav-item {
+      color: $light-color;
+      padding: 20px 10px;
+      font-size: 0.8rem;
+      font-weight: 900;
+      white-space: nowrap;
+
+      a {
+        color: $light-color;
+      }
+
+      @media only screen and ($desktop) {
+        font-size: 1rem;
+      }
+    }
+
+    @media only screen and ($desktop) {
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.cards {
+
+    .card {
+        width: 90%;
+        margin: 20px auto;
+
+        @media only screen and ($desktop) {
+            width: 60%;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .main-button {
+            padding: 0;
+
+            input {
+                font-size: 0.8em;
+                background-color: $secondary-color;
+                border: 0;
+                border-radius: 10px;
+                padding: 15px 40px;
+                text-transform: uppercase;
+                color: $light-color;
+                font-family: $navigation-font;
+            }
+        }
+    }
+}

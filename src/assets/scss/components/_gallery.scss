@@ -1,0 +1,30 @@
+.our-gallery {
+  padding: 20px 0;
+  .top-content {
+    text-align: center;
+  }
+
+  .gallery {
+    display: grid;
+    gap: 30px;
+    padding: 20px;
+
+    a {
+      max-height: 300px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media ($tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media ($desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

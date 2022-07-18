@@ -1,0 +1,84 @@
+.location {
+  width: 100%;
+
+  .section-heading {
+    // background-image: url(../images/kragujevacs1.webp);
+    margin-top: 15%;
+  }
+
+  .map {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    @media only screen and ($desktopXL) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .mapa {
+      @media only screen and ($desktopXL) {
+        flex: 4;
+      }
+    }
+
+    #map {
+      height: 516px;
+      border-radius: 15px;
+    }
+
+    .description {
+      width: 90%;
+      margin: 20px auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $secondary-color;
+      padding: 50px 20px;
+      border-radius: 10px;
+      flex: 1;
+
+      @media only screen and ($desktopXL) {
+        flex: 1;
+        margin: 0 0 0 20px;
+        width: 100%;
+      }
+
+      p,
+      a {
+        font-family: $primary-font-stack;
+        color: $light-color;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.stations-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  @media only screen and ($mobileL) {
+    font-size: 1.5rem;
+    right: 25px;
+  }
+
+  @media only screen and ($mobileXXL) {
+    font-size: 2.5rem;
+    right: 40px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  input {
+    padding: 5% 10%;
+    font-family: $secondary-font-stack;
+  }
+}

@@ -1,0 +1,36 @@
+@import url("http://fonts.cdnfonts.com/css/rockwell-nova");
+@import url("http://fonts.cdnfonts.com/css/roboto");
+
+$primary-font-stack: "Roboto", sans-serif;
+$secondary-font-stack: "Roboto", sans-serif;
+
+$primary-color: #eb2026;
+$secondary-color: #fbaf42;
+$dark-color: #000;
+$light-color: #fff;
+$modal-opened-overlay-color: rgba(0, 0, 0, 0.7);
+$ribbon-color: $primary-color;
+$ribbon-text-color: $light-color;
+$ribbon-font: $secondary-font-stack;
+$navigation-font: $primary-font-stack;
+$box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+$square-box-shadow: 0.5rem 0.5rem #333, -0.5rem -0.5rem #333;
+$services-background: #910b5a;
+
+$who-we-are-background: rgb(201, 201, 201);
+
+// $header-background: linear-gradient(45deg, $secondary-color 0%,  $primary-color 100%);
+$header-background: $primary-color;
+$subheader-background: rgba(250, 175, 66, 0.5);
+
+$mobileL: "min-width:360px";
+$mobileM: "min-width:375px";
+$mobileX: "min-width:425px";
+$mobileXL: "min-width:480px";
+$mobileXXL: "min-width:640px";
+$tablet: "min-width:820px";
+$desktop: "min-width:1024px";
+$desktopXL: "min-width:1102px";
+$desktopXXL: "min-width:1200px";
+$desktopXXXL: "min-width:1400px";
+$desktopXXXXL: "min-width:1600px";

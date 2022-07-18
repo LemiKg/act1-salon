@@ -1,0 +1,92 @@
+.recent-news {
+  background: $who-we-are-background;
+  padding: 20px 0;
+  margin-bottom: 30px;
+
+  .top-content {
+    padding: 20px;
+  }
+
+  .news-section {
+    display: flex;
+    flex-direction: column;
+
+    .right,
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    @media ($tablet) {
+      flex-direction: row;
+      .right {
+        flex: 2;
+      }
+      .left {
+        flex: 1;
+      }
+    }
+
+    .left {
+      position: relative;
+      text-align: center;
+
+      &::after {
+        content: "SECOND LOCATION";
+        display: block;
+        top: 0;
+        transform: translateY(-30%);
+        left: calc(50% - 80px);
+        color: $light-color;
+        position: absolute;
+        background: $services-background;
+        padding: 5px;
+        width: 160px;
+      }
+
+      img {
+        box-shadow: $square-box-shadow;
+        width: auto;
+        height: 300px;
+
+        @media ($tablet) {
+          height: 400px;
+        }
+      }
+    }
+
+    .right {
+      align-items: flex-start;
+      justify-content: space-evenly;
+      gap: 30px;
+
+      .read-more {
+        color: $dark-color;
+        border: 1px solid lighten($dark-color, 50%);
+        padding: 10px 20px;
+        transition: 0.2s;
+
+        &:hover {
+          background: $dark-color;
+          color: $light-color;
+        }
+      }
+    }
+
+    .left {
+      padding: 20px;
+      color: lighten($dark-color, 30%);
+
+      h1 {
+        color: $dark-color;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.who-we-are,
+.what-we-do {
+  background: $who-we-are-background;
+  padding: 30px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .right,
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    @media ($tablet) {
+      flex-direction: row;
+      .right,
+      .left {
+        flex: 1;
+      }
+    }
+
+    .right {
+      img {
+        box-shadow: $square-box-shadow;
+      }
+    }
+
+    .left {
+      text-align: left;
+      align-items: flex-start;
+      padding: 20px;
+      color: lighten($dark-color, 30%);
+
+      h1 {
+        color: $dark-color;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

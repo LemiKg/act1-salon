@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: $primary-font-stack;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h5 {
+  color: lighten($dark-color, 40%);
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.section-heading {
+  // background: url(../images/fastfoodstanicebcg.webp) no-repeat center center;
+  color: $light-color;
+  background-size: contain;
+
+  h1 {
+    font-size: 1.2rem;
+    padding: 2px 5px;
+
+    @media only screen and ($tablet) {
+      font-size: 3rem;
+      padding: 10px 15px;
+    }
+
+    @media only screen and ($mobileXXL) {
+      font-size: 2rem;
+      padding: 10px 15px;
+    }
+    @media only screen and ($mobileXXL) {
+      font-size: 3rem;
+      padding: 15px 20px;
+    }
+  }
+}
+
+.main-button {
+  padding: 0;
+
+  input {
+    font-size: 0.8em;
+    background-color: $secondary-color;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    color: $light-color;
+    font-family: $navigation-font;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.lb-modal-image-active {
+  background-size: contain !important;
+}
+
+.lb-modal {
+  z-index: 11 !important;
+}
+
+.call {
+  text-align: center;
+  margin: 30px 0;
+  font-weight: bold;
+
+  a {
+    color: $dark-color;
+  }
+}

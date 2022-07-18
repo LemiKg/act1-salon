@@ -1,0 +1,51 @@
+.what-we-do {
+  .container {
+    flex-direction: column;
+
+    @media ($tablet) {
+      flex-direction: row;
+    }
+
+    .right {
+      display: grid;
+      grid-gap: 20px;
+      color: $light-color;
+
+      @media ($mobileXL) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      .card {
+        padding: 20px;
+        background: $services-background;
+        display: grid;
+        grid-template-rows: 50px 80px;
+        min-height: 130px;
+        box-shadow: $box-shadow;
+        transition: 0.5s;
+
+        &:hover {
+          background: darken($services-background, 10%);
+        }
+
+        h3 {
+          text-transform: uppercase;
+          height: 40%;
+          font-size: 1.1rem;
+        }
+
+        p {
+          text-transform: capitalize;
+          border-top: 1px solid $light-color;
+          border-bottom: 1px solid $light-color;
+          display: flex;
+          align-items: center;
+          padding: 10px 0;
+          margin: 10px 0;
+          height: 60%;
+        }
+      }
+    }
+  }
+}

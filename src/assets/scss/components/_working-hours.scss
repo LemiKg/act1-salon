@@ -1,0 +1,45 @@
+.working-hours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+
+  .content {
+    min-width: 250px;
+    background: $dark-color;
+    color: darken($light-color, 20%);
+    padding: 20px;
+    border: 5px solid hsl(0, 0%, 40%);
+
+    padding: 5px;
+
+    outline: 5px solid hsl(0, 0%, 60%);
+
+    box-shadow: 0 0 0 10px hsl(0, 0%, 80%), 0 0 0 15px hsl(0, 0%, 90%);
+
+    @media ($tablet) {
+      width: 500px;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid $light-color;
+    padding: 10px;
+    font-size: 1.4rem;
+  }
+
+  .hours-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    div {
+      border-bottom: 1px dashed $light-color;
+      margin: 10px 0;
+      padding-bottom: 5px;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.stylist {
+  background: url(../images/fixed-background.webp) no-repeat center;
+  background-attachment: fixed;
+
+  .container {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      text-align: center;
+      padding: 50px 10px;
+      color: $light-color;
+      font-size: 2.2rem;
+    }
+  }
+}
