@@ -9,7 +9,8 @@
   "main": "script.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack serve --open --config webpack.dev.js"
+    "dev": "webpack serve --open --config webpack.dev.js",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +33,7 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@glidejs/glide": "^3.5.2",
     "@googlemaps/js-api-loader": "^1.13.2",
+    "gh-pages": "^4.0.0",
     "lightningbox": "^1.0.2",
     "swiper": "^8.0.3"
   }
